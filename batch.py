@@ -21,7 +21,6 @@ parser.add_argument("--srand", metavar = "srand", type = int, default = 0)
 
 args = parser.parse_args()
 
-## load packages
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -40,46 +39,38 @@ import sklearn
 import dill
 import anndata
 import gwot
-from gwot import models, util, ts, anndata_utils
+from gwot import models, util, ts, anndata_utils, altsolver
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 torch.set_default_tensor_type(torch.DoubleTensor)
 
-# set random seed 
 np.random.seed(args.srand)
-
-print("Loading adata")
 adata = anndata.read_h5ad(args.adata)
-
-print("Loading cell sets")
 cell_sets = wot.io.read_sets(args.cellsets)
 obs_celltype = pd.DataFrame(cell_sets.X, dtype = bool, columns = cell_sets.var.index, index = cell_sets.obs.index)
 idx_batch = pd.Index.intersection(cell_sets.obs.index, adata.obs.index)
 adata_batch = adata[idx_batch, ]
 adata_batch.obs = pd.concat([adata_batch.obs, obs_celltype.loc[idx_batch, ]], axis = 1)
+
 adata_batch = adata_batch[adata_batch.obs.day > 4, ]
 del adata_batch.uns
-# drop subtypes and create a type 'None'
+
 adata_batch.obs = adata_batch.obs.drop(columns = ["MET", "OPC", "Astrocyte", "Neuron", "SpongioTropho", "ProgenitorTropho", "SpiralArteryTrophoGiant", "RadialGlia"])
 adata_batch.obs.loc[:, "None"] = (adata_batch.obs.iloc[:, 3:].sum(1) == 0)
 adata_batch = adata_batch[adata_batch.obs.iloc[:, 3:].sum(1) == 1, :]
 
-# subset timepoints 
 adata_ts = adata_batch[~np.isnan(adata_batch.obs.day), :] 
+pg.pca(adata_ts, n_components = args.pcadim, features = None)
 t_map = np.array(adata_ts.obs.day.unique())
 t_map = t_map[t_map >= args.t_initial]
 t_map = t_map[t_map < args.t_final]
 t_map.sort()
 
-# compute true proportions 
 props = [adata_batch[adata_batch.obs.day == i, :].obs.iloc[:, 3:].sum(0) for i in t_map]
 props = [p/p.sum() for p in props]
-def normalise(x):
-        return x/x.sum()
-# compute perturbed proportions 
+
 props_perturb = [np.random.dirichlet(2.5*p + 1e-3) for p in props]
 
-# sample according to perturbed proportions 
 celltypes = adata_ts.obs.iloc[:, 3:].columns
 adata_subsamp = []
 for i in range(len(t_map)):
@@ -93,19 +84,21 @@ for i in range(len(t_map)):
         q[adata_.obs.loc[:, c]] = p.loc[c]
     q = q/q.sum()
     adata_subsamp += [adata_[np.random.choice(adata_.shape[0], size = args.numcells, p = q), :], ]
-# create perturbed anndata
+
 adata_s = adata_subsamp[0].concatenate(adata_subsamp[1:])
+adata_s.obsm["X_pca_orig"] = adata_s.obsm["X_pca"]
 days = adata_s.obs.day.unique()
 days_tot = adata_s.obs.day.unique().shape[0]
-# sampled perturbed proportions 
+
 props_subsamp = [adata_s[adata_s.obs.day == i, :].obs.iloc[:, 3:].sum(0) for i in t_map]
 props_subsamp = [p/p.sum() for p in props_subsamp]
-# compute PCA after all subsampling is done 
-pg.pca(adata_s, n_components = args.pcadim, features = None)
+
+# recompute PCA for subsampled data
+pg.pca(adata_s, n_components = adata.obsm["X_pca"].shape[1], features = None)
 pg.neighbors(adata_s)
 pg.diffmap(adata_s)
 adata_s.obsm['X_fle'] = np.array(adata_s.obsm['X_fle'])
-# compute cost scale
+
 c_means = np.array([gwot.anndata_utils.get_C_mean(adata_s, t_map[i], t_next = t_map[i+1], mode = "tr") for i in range(0, len(t_map[:-1]))])
 c_means_self = np.array([gwot.anndata_utils.get_C_mean(adata_s, t, mode = "self") for t in t_map])
 
@@ -120,8 +113,9 @@ dt0 = args.dt0/dt.sum()
 tsdata = gwot.ts.TimeSeries(x = np.array(adata_s.obsm["X_pca"], dtype = np.float64), 
                 dt = dt/dt.sum(), 
                 t_idx = t_idx, 
-                D = args.eps_eff/(2*args.dt0))
+                D = args.eps_eff/(2*dt0))
 
+# solve without growth
 model_ng = gwot.models.OTModel(tsdata, lamda = args.lamda,
         eps_df = args.eps_df*torch.ones(tsdata.T).cuda(), 
         lamda_i = torch.ones(tsdata.T).cuda(), 
@@ -135,7 +129,7 @@ model_ng = gwot.models.OTModel(tsdata, lamda = args.lamda,
         device = device,
         use_keops = True)
 
-model_ng.solve_lbfgs(steps = args.steps_ng, max_iter = 25, lr = 1, history_size = 50, line_search_fn = 'strong_wolfe', factor = 2, tol = 1e-5, retry_max = 0)
+model_ng.solve_lbfgs(steps = args.steps_g, max_iter = 25, lr = 1, history_size = 50, line_search_fn = 'strong_wolfe', factor = 2, tol = 1e-5, retry_max = 0)
 
 with torch.no_grad():
     P_ng = model_ng.get_P()
@@ -161,7 +155,8 @@ model_g = gwot.models.OTModel(tsdata, lamda = args.lamda,
         device = device,
         use_keops = True)
 
-model_g.solve_lbfgs(steps = args.steps_g, max_iter = 25, lr = 1, history_size = 10, line_search_fn = 'strong_wolfe', factor = 2, tol = 1e-5, retry_max = 0)
+for _ in range(4):
+    model_g.solve_lbfgs(steps = args.steps_g, max_iter = 25, lr = 1, history_size = 10, line_search_fn = 'strong_wolfe', factor = 2, tol = 1e-5, retry_max = 0)
 
 with torch.no_grad():
     P = model_g.get_P()
@@ -172,5 +167,8 @@ r = (R.T/R.sum(dim = 1)).T
 props_gwot = [np.array([p[i, adata_s.obs.loc[:, c]].sum().item() for c in celltypes]) for i in range(len(t_map))]
 for x in props_gwot:
     x = x/x.sum()
+
+print("Done, writing results...")
 with open(args.outfile, "wb") as f:
     dill.dump({"props" : props, "props_perturb" : props_perturb, "props_subsamp" : props_subsamp, "props_gwot" : props_gwot}, f)
+

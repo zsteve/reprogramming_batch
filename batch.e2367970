@@ -1,0 +1,31 @@
+Matplotlib created a temporary config/cache directory at /tmp/pbs.2367970.pbsha.ib.sockeye/matplotlib-m9f4i6pc because the default path (/home/szhang99/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Trying to set attribute `.uns` of view, copying.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorchcce0390686/CMakeFiles/keopslibKeOpstorchcce0390686.dir/keops/core/./keopslibKeOpstorchcce0390686_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorch70ac6f16e5/CMakeFiles/keopslibKeOpstorch70ac6f16e5.dir/keops/core/./keopslibKeOpstorch70ac6f16e5_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorchaa129fa7e8/CMakeFiles/keopslibKeOpstorchaa129fa7e8.dir/keops/core/./keopslibKeOpstorchaa129fa7e8_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorchd12d72cecc/CMakeFiles/keopslibKeOpstorchd12d72cecc.dir/keops/core/./keopslibKeOpstorchd12d72cecc_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorchfe5acda0b3/CMakeFiles/keopslibKeOpstorchfe5acda0b3.dir/keops/core/./keopslibKeOpstorchfe5acda0b3_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorch25917cc48a/CMakeFiles/keopslibKeOpstorch25917cc48a.dir/keops/core/./keopslibKeOpstorch25917cc48a_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorchce88e244ec/CMakeFiles/keopslibKeOpstorchce88e244ec.dir/keops/core/./keopslibKeOpstorchce88e244ec_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorch6d1f9bc4fe/CMakeFiles/keopslibKeOpstorch6d1f9bc4fe.dir/keops/core/./keopslibKeOpstorch6d1f9bc4fe_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorche6fe08356f/CMakeFiles/keopslibKeOpstorche6fe08356f.dir/keops/core/./keopslibKeOpstorche6fe08356f_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorch21237327ad/CMakeFiles/keopslibKeOpstorch21237327ad.dir/keops/core/./keopslibKeOpstorch21237327ad_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorche0ccb5b09b/CMakeFiles/keopslibKeOpstorche0ccb5b09b.dir/keops/core/./keopslibKeOpstorche0ccb5b09b_generated_link_autodiff.cu.o successfully.
+Generated /scratch/st-schieb-1/.cache/pykeops-1.4.1-cpython-38-gpuGPU-83359d4a-6843-0987-ef84-758b30a60596/build-libKeOpstorch957cd9309e/CMakeFiles/keopslibKeOpstorch957cd9309e.dir/keops/core/./keopslibKeOpstorch957cd9309e_generated_link_autodiff.cu.o successfully.
