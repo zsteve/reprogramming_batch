@@ -69,10 +69,10 @@ t_map.sort()
 props = [adata_batch[adata_batch.obs.day == i, :].obs.iloc[:, 3:].sum(0) for i in t_map]
 props = [p/p.sum() for p in props]
 
-# props_perturb = [np.random.dirichlet(2.5*p + 1e-3) for p in props]
-def normalise(x):
-    return x/x.sum()
-props_perturb = [normalise(p * np.random.uniform(size = len(p))) for p in props]
+props_perturb = [np.random.dirichlet(10*p + 1e-3) for p in props]
+# def normalise(x):
+#     return x/x.sum()
+# props_perturb = [normalise(p * np.random.uniform(size = len(p))) for p in props]
 
 celltypes = adata_ts.obs.iloc[:, 3:].columns
 adata_subsamp = []
