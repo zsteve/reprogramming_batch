@@ -10,7 +10,7 @@ parser.add_argument("--t_initial", metavar = "t_initial", type = float, default 
 parser.add_argument("--t_final", metavar = "t_final", type = float, default = 14.5)
 parser.add_argument("--numcells", metavar = "numcells", type = int, default = 250)
 parser.add_argument("--pcadim", metavar = "pcadim", type = int, default = 10)
-parser.add_argument("--lamda", metavar = "lamda", type = float, default = 5e-3)
+parser.add_argument("--lamda", metavar = "lamda", type = float, default = 10e-3)
 parser.add_argument("--eps_df", metavar = "eps_df", type = float, default = 0.025)
 parser.add_argument("--eps_eff", metavar = "eps_eff", type = float, default = 0.1)
 parser.add_argument("--dt0", metavar = "dt0", type = float, default = 0.5)
