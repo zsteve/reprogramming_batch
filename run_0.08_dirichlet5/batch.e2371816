@@ -1,0 +1,33 @@
+Matplotlib created a temporary config/cache directory at /tmp/pbs.2371816.pbsha.ib.sockeye/matplotlib-smqxuoz_ because the default path (/home/szhang99/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Trying to set attribute `.uns` of view, copying.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+/home/szhang99/.local/lib/python3.8/site-packages/pegasus/tools/nearest_neighbors.py:176: RuntimeWarning: invalid value encountered in true_divide
+  normed_dist[i, :] = np.sqrt(numers / denoms) * np.exp(
+/home/szhang99/.local/lib/python3.8/site-packages/pegasus/tools/nearest_neighbors.py:177: RuntimeWarning: invalid value encountered in true_divide
+  -np.square(distances[i, :]) / denoms
+Traceback (most recent call last):
+  File "batch.py", line 102, in <module>
+    pg.diffmap(adata_s)
+  File "/home/szhang99/.local/lib/python3.8/site-packages/pegasusio/decorators.py", line 12, in wrapper_timer
+    result = func(*args, **kwargs)
+  File "/home/szhang99/.local/lib/python3.8/site-packages/pegasus/tools/diffusion_map.py", line 156, in diffmap
+    Phi_pt, Lambda, Phi = calculate_diffusion_map(
+  File "/home/szhang99/.local/lib/python3.8/site-packages/pegasus/tools/diffusion_map.py", line 67, in calculate_diffusion_map
+    assert nc == 1
+AssertionError

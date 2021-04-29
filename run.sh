@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l walltime=1:00:00,select=1:ncpus=2:ngpus=1:mem=8gb
+#PBS -l walltime=0:30:00,select=1:ncpus=2:ngpus=1:mem=8gb
 #PBS -N batch
 #PBS -A st-schieb-1-gpu
  
@@ -14,4 +14,4 @@ cd $PBS_O_WORKDIR
 
 SRAND=$RANDOM
 
-python batch.py --adata /home/szhang99/st-schieb-1/sde_couplings/data_repr.h5ad --cellsets /home/szhang99/st-schieb-1/zsteve/reprogramming_batch/cell_sets.gmt --outfile $SRAND.out --srand $SRAND
+python batch.py --adata /home/szhang99/st-schieb-1/sde_couplings/data_repr.h5ad --cellsets /home/szhang99/st-schieb-1/zsteve/reprogramming_batch/cell_sets.gmt --lamda __LAMDA__ --outfile $SRAND.out --srand $SRAND

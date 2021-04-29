@@ -1,0 +1,8 @@
+2021-04-29 12:47:07,028 - pegasus.tools.preprocessing - INFO - Function 'pca' finished in 3.16s.
+2021-04-29 12:47:07,449 - pegasus.tools.preprocessing - INFO - Function 'pca' finished in 0.22s.
+2021-04-29 12:47:07,847 - pegasus.tools.nearest_neighbors - INFO - Function 'get_neighbors' finished in 0.40s.
+2021-04-29 12:47:07,974 - pegasus.tools.nearest_neighbors - INFO - Function 'calculate_affinity_matrix' finished in 0.13s.
+2021-04-29 12:47:07,977 - pegasus.tools.diffusion_map - INFO - Calculating connected components is done.
+2021-04-29 12:47:07,988 - pegasus.tools.diffusion_map - INFO - Calculating normalized affinity matrix is done.
+2021-04-29 12:47:08,857 - pegasus.tools.diffusion_map - INFO - Detected knee point at t = 111.
+2021-04-29 12:47:08,859 - pegasus.tools.diffusion_map - INFO - Function 'diffmap' finished in 0.88s.

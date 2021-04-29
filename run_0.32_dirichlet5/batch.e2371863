@@ -1,0 +1,52 @@
+Matplotlib created a temporary config/cache directory at /tmp/pbs.2371863.pbsha.ib.sockeye/matplotlib-_amxfz76 because the default path (/home/szhang99/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Trying to set attribute `.uns` of view, copying.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+Traceback (most recent call last):
+  File "batch.py", line 135, in <module>
+    model_ng.solve_lbfgs(steps = args.steps_g, max_iter = 25, lr = 1, history_size = 50, line_search_fn = 'strong_wolfe', factor = 2, tol = 1e-5, retry_max = 0)
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/gwot/models.py", line 535, in solve_lbfgs
+    primal_obj = self.primal_obj().item()
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/gwot/models.py", line 299, in primal_obj
+    spine_all = torch.stack([eval_primal_OT(self, phi_all)] + \
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/gwot/models.py", line 263, in eval_primal_OT
+    Z = self.logsumexp_weight((model.K_ij[0] @ (v/self.eps[0]).exp()).view(-1, 1, 1), 
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/gwot/models.py", line 198, in logsumexp_weight
+    return x.logsumexp(weight = w, dim = dim).view(-1)
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/pykeops/common/lazy_tensor.py", line 1403, in logsumexp
+    return self.reduction("LogSumExp", other=weight, axis=axis, dim=dim, **kwargs)
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/pykeops/common/lazy_tensor.py", line 560, in reduction
+    return res()
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/pykeops/common/lazy_tensor.py", line 716, in __call__
+    return self.callfun(*args, *self.variables, **self.kwargs)
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/pykeops/torch/generic/generic_red.py", line 395, in __call__
+    out = GenredAutograd.apply(self.formula, self.aliases, backend, self.dtype, 
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/pykeops/torch/generic/generic_red.py", line 22, in forward
+    myconv = LoadKeOps(formula, aliases, dtype, 'torch', optional_flags).import_module()
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/site-packages/pykeops/common/keops_io.py", line 70, in import_module
+    return importlib.import_module(self.dll_name)
+  File "/home/szhang99/.conda/envs/sdecouplings/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 657, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1101, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: dynamic module does not define module export function (PyInit_libKeOpstorch0251f8cb46)

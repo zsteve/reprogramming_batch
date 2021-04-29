@@ -1,0 +1,5 @@
+2021-04-29 12:38:14,280 - pegasus.tools.preprocessing - INFO - Function 'pca' finished in 3.08s.
+2021-04-29 12:38:14,694 - pegasus.tools.preprocessing - INFO - Function 'pca' finished in 0.21s.
+2021-04-29 12:38:15,102 - pegasus.tools.nearest_neighbors - INFO - Function 'get_neighbors' finished in 0.41s.
+2021-04-29 12:38:15,221 - pegasus.tools.nearest_neighbors - INFO - Function 'calculate_affinity_matrix' finished in 0.12s.
+2021-04-29 12:38:15,224 - pegasus.tools.diffusion_map - INFO - Calculating connected components is done.
