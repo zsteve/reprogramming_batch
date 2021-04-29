@@ -1,0 +1,190 @@
+2021-04-29 13:24:56,507 - pegasus.tools.preprocessing - INFO - Function 'pca' finished in 3.13s.
+2021-04-29 13:24:56,916 - pegasus.tools.preprocessing - INFO - Function 'pca' finished in 0.21s.
+2021-04-29 13:24:57,306 - pegasus.tools.nearest_neighbors - INFO - Function 'get_neighbors' finished in 0.39s.
+2021-04-29 13:24:57,422 - pegasus.tools.nearest_neighbors - INFO - Function 'calculate_affinity_matrix' finished in 0.12s.
+2021-04-29 13:24:57,426 - pegasus.tools.diffusion_map - INFO - Calculating connected components is done.
+2021-04-29 13:24:57,435 - pegasus.tools.diffusion_map - INFO - Calculating normalized affinity matrix is done.
+2021-04-29 13:24:58,234 - pegasus.tools.diffusion_map - INFO - Detected knee point at t = 116.
+2021-04-29 13:24:58,235 - pegasus.tools.diffusion_map - INFO - Function 'diffmap' finished in 0.81s.
+Iteration =  0  Dual obj =  -43.70606358732397  Primal_obj =  6799403.341449508  Gap =  6799447.047513096 Sum =  496.74989026495746
+Iteration =  1  Dual obj =  0.039170032528297684  Primal_obj =  8739.359839484281  Gap =  8739.320669451752 Sum =  1.1964848967081418
+Iteration =  2  Dual obj =  0.21287950875997397  Primal_obj =  3141.7332730339613  Gap =  3141.520393525201 Sum =  0.611828320946128
+Iteration =  3  Dual obj =  0.31199754805875146  Primal_obj =  1978.4179697295303  Gap =  1978.1059721814715 Sum =  0.5876387188356561
+Iteration =  4  Dual obj =  0.38983957439308553  Primal_obj =  620.4659024915077  Gap =  620.0760629171145 Sum =  1.303668342764472
+Iteration =  5  Dual obj =  0.4073754485504173  Primal_obj =  221.93668569045946  Gap =  221.52931024190903 Sum =  0.9831760687502833
+Iteration =  6  Dual obj =  0.41576987876199717  Primal_obj =  102.57044724013778  Gap =  102.15467736137579 Sum =  1.0471363862286682
+Iteration =  7  Dual obj =  0.41894662581395736  Primal_obj =  34.298153383599406  Gap =  33.87920675778545 Sum =  0.9971892987795338
+Iteration =  8  Dual obj =  0.4200947261947047  Primal_obj =  13.780215841558592  Gap =  13.360121115363887 Sum =  0.9869609047995024
+Iteration =  9  Dual obj =  0.4205826817793267  Primal_obj =  5.596343649090736  Gap =  5.175760967311409 Sum =  0.9974473737367329
+Iteration =  10  Dual obj =  0.4207590778978235  Primal_obj =  2.5778412642894653  Gap =  2.1570821863916416 Sum =  0.9946498443229144
+Iteration =  11  Dual obj =  0.42083291251241517  Primal_obj =  1.3080993639467247  Gap =  0.8872664514343095 Sum =  1.000209020004815
+Iteration =  12  Dual obj =  0.42085408229198557  Primal_obj =  0.7459382240289555  Gap =  0.3250841417369699 Sum =  1.0001452052326296
+Iteration =  13  Dual obj =  0.4208693294349289  Primal_obj =  0.616371466213894  Gap =  0.19550213677896516 Sum =  1.0003897922350438
+Iteration =  14  Dual obj =  0.4208754189724986  Primal_obj =  0.624285010058051  Gap =  0.20340959108555245 Sum =  1.0002838987949951
+Iteration =  15  Dual obj =  0.420881636487116  Primal_obj =  0.4558025689997418  Gap =  0.03492093251262579 Sum =  1.0001861681693998
+Iteration =  16  Dual obj =  0.42088272952483996  Primal_obj =  0.4341057246466703  Gap =  0.013222995121830339 Sum =  1.0001064752003521
+Iteration =  17  Dual obj =  0.4208830535001951  Primal_obj =  0.4387708251451128  Gap =  0.01788777164491767 Sum =  0.9999949516448856
+Iteration =  18  Dual obj =  0.420883283314991  Primal_obj =  0.4277121823526671  Gap =  0.006828899037676139 Sum =  0.999942954015824
+Iteration =  19  Dual obj =  0.4208837820753294  Primal_obj =  0.44508752681483604  Gap =  0.02420374473950665 Sum =  0.9997819694619217
+Iteration =  20  Dual obj =  0.4208840596351504  Primal_obj =  0.4217164482755619  Gap =  0.0008323886404114633 Sum =  0.9998673702487342
+Iteration =  21  Dual obj =  0.42088406607889783  Primal_obj =  0.42145012604548826  Gap =  0.0005660599665904265 Sum =  0.9998898534382793
+Iteration =  22  Dual obj =  0.42088407023549124  Primal_obj =  0.4213431022796177  Gap =  0.0004590320441264506 Sum =  0.9998976566344384
+Iteration =  23  Dual obj =  0.4208840711529895  Primal_obj =  0.4213151894580093  Gap =  0.0004311183050197953 Sum =  0.9999030525202655
+Iteration =  24  Dual obj =  0.42088407180371745  Primal_obj =  0.42133705494561957  Gap =  0.0004529831419021191 Sum =  0.9999088445359519
+Iteration =  0  Dual obj =  -28.25448448425959  Primal_obj =  5203983.839277455  Gap =  5204012.093761939 Sum =  496.74989026495746
+Iteration =  1  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.500000
+Iteration =  2  Dual obj =  0.3254652862301859  Primal_obj =  8949.482620570994  Gap =  8949.157155284764 Sum =  0.3905758463414891
+Iteration =  3  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.250000
+Iteration =  4  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.125000
+Iteration =  5  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.062500
+Iteration =  6  Dual obj =  0.4580876323853554  Primal_obj =  5204.155980611858  Gap =  5203.697892979472 Sum =  1.0657644117533203
+Iteration =  7  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.031250
+Iteration =  8  Dual obj =  0.5216057701676667  Primal_obj =  2433.7411453498357  Gap =  2433.219539579668 Sum =  0.6850282438032536
+Iteration =  9  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.015625
+Iteration =  10  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.007812
+Iteration =  11  Dual obj =  0.5421973832084455  Primal_obj =  2818.6763023053422  Gap =  2818.1341049221337 Sum =  0.8345083033281593
+Iteration =  12  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.003906
+Iteration =  13  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.001953
+Iteration =  14  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000977
+Iteration =  15  Dual obj =  0.574848493756686  Primal_obj =  1969.3298416174136  Gap =  1968.754993123657 Sum =  0.6647208936436786
+Iteration =  16  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000488
+Iteration =  17  Dual obj =  0.5799051735632784  Primal_obj =  1934.648957420877  Gap =  1934.0690522473137 Sum =  0.6851009289436575
+Iteration =  18  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000244
+Iteration =  19  Dual obj =  0.6036504147060411  Primal_obj =  2575.8651681105234  Gap =  2575.2615176958175 Sum =  0.7747693538437161
+Iteration =  20  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000122
+Iteration =  21  Dual obj =  0.6117702319477438  Primal_obj =  1983.6224138152022  Gap =  1983.0106435832545 Sum =  0.7359725796426237
+Iteration =  22  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000061
+Iteration =  23  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000031
+Iteration =  24  Dual obj =  0.6311538244559141  Primal_obj =  2579.8056107589064  Gap =  2579.1744569344505 Sum =  0.7008599635613013
+Iteration =  0  Dual obj =  0.6311538244559141  Primal_obj =  2579.8056107589064  Gap =  2579.1744569344505 Sum =  0.7008599635613013
+Iteration =  1  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.500000
+Iteration =  2  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.250000
+Iteration =  3  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.125000
+Iteration =  4  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.062500
+Iteration =  5  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.031250
+Iteration =  6  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.015625
+Iteration =  7  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.007812
+Iteration =  8  Dual obj =  0.6456253210824936  Primal_obj =  1791.8355635003072  Gap =  1791.1899381792248 Sum =  0.7169171085099856
+Iteration =  9  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.003906
+Iteration =  10  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.001953
+Iteration =  11  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000977
+Iteration =  12  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000488
+Iteration =  13  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000244
+Iteration =  14  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000122
+Iteration =  15  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000061
+Iteration =  16  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000031
+Iteration =  17  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000015
+Iteration =  18  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000008
+Iteration =  19  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000004
+Iteration =  20  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000002
+Iteration =  21  Dual obj =  0.6545792675612618  Primal_obj =  1932.774346290636  Gap =  1932.1197670230747 Sum =  0.7064070227131356
+Iteration =  22  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000001
+Iteration =  23  Dual obj =  0.6566867989935328  Primal_obj =  1798.9022186072395  Gap =  1798.245531808246 Sum =  0.7064325316111337
+Iteration =  24  Dual obj =  0.6650737782430807  Primal_obj =  1697.9384502767155  Gap =  1697.2733764984723 Sum =  0.7049876488927913
+Iteration =  0  Dual obj =  0.6650737782430807  Primal_obj =  1697.9384502767155  Gap =  1697.2733764984723 Sum =  0.7049876488927913
+Iteration =  1  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.500000
+Iteration =  2  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.250000
+Iteration =  3  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.125000
+Iteration =  4  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.062500
+Iteration =  5  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.031250
+Iteration =  6  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.015625
+Iteration =  7  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.007812
+Iteration =  8  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.003906
+Iteration =  9  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.001953
+Iteration =  10  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000977
+Iteration =  11  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000488
+Iteration =  12  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000244
+Iteration =  13  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000122
+Iteration =  14  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000061
+Iteration =  15  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000031
+Iteration =  16  Dual obj =  0.6719976704672082  Primal_obj =  1698.2677788432325  Gap =  1697.5957811727653 Sum =  0.7004755133718839
+Iteration =  17  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000015
+Iteration =  18  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000008
+Iteration =  19  Dual obj =  0.679250616740336  Primal_obj =  1638.7296319483632  Gap =  1638.050381331623 Sum =  0.6969109763864603
+Iteration =  20  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000004
+Iteration =  21  Dual obj =  0.6804365479813049  Primal_obj =  1619.0147542178422  Gap =  1618.3343176698609 Sum =  0.6964413806605237
+Iteration =  22  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.000002
+Iteration =  23  Dual obj =  0.7130836994868659  Primal_obj =  2594.371584139578  Gap =  2593.658500440091 Sum =  0.696134432520459
+Iteration =  24  Dual obj =  0.7488861266224165  Primal_obj =  3247.534632075926  Gap =  3246.7857459493034 Sum =  0.7471806566672946
+Iteration =  0  Dual obj =  0.7488861266224165  Primal_obj =  3247.534632075926  Gap =  3246.7857459493034 Sum =  0.7471806566672946
+Iteration =  1  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.500000
+Iteration =  2  Dual obj =  nan  Primal_obj =  nan  Gap =  nan Sum =  nan
+Warning: NaN encountered, restarting and scaling down learning rate. lr_new = 0.250000
+Iteration =  3  Dual obj =  0.8726285453688816  Primal_obj =  2847.9848311978376  Gap =  2847.1122026524686 Sum =  0.5844195891394062
+Iteration =  4  Dual obj =  0.9654175478905183  Primal_obj =  1525.5426829574444  Gap =  1524.577265409554 Sum =  2.406016448394886
+Iteration =  5  Dual obj =  1.0193070690359054  Primal_obj =  1303.8057177433634  Gap =  1302.7864106743275 Sum =  0.8152905424850312
+Iteration =  6  Dual obj =  1.053097959198034  Primal_obj =  445.1699694144587  Gap =  444.11687145526065 Sum =  1.3930115698820873
+Iteration =  7  Dual obj =  1.0713528590868195  Primal_obj =  670.5557894466318  Gap =  669.484436587545 Sum =  1.1323511265153778
+Iteration =  8  Dual obj =  1.085203349955882  Primal_obj =  524.95048396445  Gap =  523.865280614494 Sum =  1.0889261643447772
+Iteration =  9  Dual obj =  1.0923306997428324  Primal_obj =  267.5789268292761  Gap =  266.48659612953327 Sum =  1.1144920917486756
+Iteration =  10  Dual obj =  1.0951978379219827  Primal_obj =  90.10630606802681  Gap =  89.01110823010482 Sum =  1.0510719246724467
+Iteration =  11  Dual obj =  1.096470266902776  Primal_obj =  40.54519542708863  Gap =  39.44872516018585 Sum =  1.0245990118193673
+Iteration =  12  Dual obj =  1.0973453455937827  Primal_obj =  41.53210096419966  Gap =  40.43475561860588 Sum =  1.0477191056922257
+Iteration =  13  Dual obj =  1.098013562004184  Primal_obj =  20.504043662856503  Gap =  19.40603010085232 Sum =  1.0385700619085545
+Iteration =  14  Dual obj =  1.0983422019333131  Primal_obj =  12.169578749305382  Gap =  11.071236547372068 Sum =  1.0107445673465416
+Iteration =  15  Dual obj =  1.0985298575761597  Primal_obj =  8.320328126502458  Gap =  7.221798268926299 Sum =  1.0070239025894163
+Iteration =  16  Dual obj =  1.0986318431407602  Primal_obj =  4.667151261497471  Gap =  3.5685194183567113 Sum =  1.0140265595140023
+Iteration =  17  Dual obj =  1.0986790553366113  Primal_obj =  3.6943714913014256  Gap =  2.595692435964814 Sum =  1.0039383856468909
+Iteration =  18  Dual obj =  1.0987092633761817  Primal_obj =  2.988251834965502  Gap =  1.8895425715893204 Sum =  0.9960914018680251
+Iteration =  19  Dual obj =  1.0987262765446406  Primal_obj =  2.4472367045434718  Gap =  1.3485104279988311 Sum =  0.9998936816552182
+Iteration =  20  Dual obj =  1.0987372992829454  Primal_obj =  2.0196473442629763  Gap =  0.9209100449800309 Sum =  1.0033416636485568
+Iteration =  21  Dual obj =  1.0987458453635077  Primal_obj =  1.7685524996453852  Gap =  0.6698066542818775 Sum =  0.9962555221436329
+Iteration =  22  Dual obj =  1.0987517610394286  Primal_obj =  1.718650306605475  Gap =  0.6198985455660464 Sum =  0.9954208032618448
+Iteration =  23  Dual obj =  1.0987571686681183  Primal_obj =  1.715444709518387  Gap =  0.6166875408502686 Sum =  1.0001047171183925
+Iteration =  24  Dual obj =  1.0987620436758934  Primal_obj =  1.5304481538168941  Gap =  0.4316861101410008 Sum =  1.0021867800321014
+Done, writing results...
